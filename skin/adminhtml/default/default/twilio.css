@@ -1,0 +1,6 @@
+/* Twilio */
+.twilio-notice { background:url(images/twilio.png) no-repeat 5px center #eaf0ee; border:1px solid #ccc; margin-bottom:10px; padding:10px 5px 5px 185px; }
+.twilio-notice h4,
+.twilio-notice p { margin:0; }
+.twilio-notice h2 { color:#444; font-size:1.4em; line-height:1em; }
+.twilio-notice a { text-decoration:none; }

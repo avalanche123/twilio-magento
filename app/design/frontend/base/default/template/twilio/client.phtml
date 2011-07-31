@@ -1,0 +1,30 @@
+<div class="block block-client">
+    <script type="text/javascript">
+    Twilio.Device.setup("<?php echo $this->getOutboundToken(); ?>");
+
+    Twilio.Device.error(function (error) {
+        alert("<?php echo Mage::helper('twilio')->__('Error'); ?>: " + error.message);
+    });
+
+    function call() {
+        Twilio.Device.connect();
+    }
+
+    function hangup() {
+        Twilio.Device.disconnectAll();
+    }
+    </script>
+
+    <div class="block-title">
+        <strong>
+            <span>Customer Service</span>
+        </strong>
+    </div>
+    <button class="call" onclick="call();"><?php echo Mage::helper('twilio')->__('Call'); ?></button>
+
+    <button class="hangup" onclick="hangup();"><?php echo Mage::helper('twilio')->__('Hangup'); ?></button>
+
+    <div class="powered-by">
+        Powered by <a href="http://www.twilio.com">Twilio</a>
+    </div>
+</div>
