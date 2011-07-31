@@ -1,5 +1,5 @@
 # About
-This module integrates Twilio(http://www.twilio.com/) in Magento(http://www.magentocommerce.com/). This module allows Magento customers to call customer support number directly from their browser.
+This module integrates [Twilio](http://www.twilio.com/) in [Magento](http://www.magentocommerce.com/). This module allows Magento customers to call customer support number directly from their browser.
 
 # Installation
 To install the module, simply copy the contents of this repository to the root directory of your Magento installation
