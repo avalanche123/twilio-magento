@@ -20,7 +20,11 @@ class Avalanche_Twilio_Model_Twilio extends Services_Twilio
     public static function isSetUp()
     {
         return Mage::getStoreConfig('twilio/config/account_sid')
-            && Mage::getStoreConfig('twilio/config/auth_token');
+            && Mage::getStoreConfig('twilio/config/auth_token')
+            && Mage::getStoreConfig('contacts/twilio/application_sid')
+            && Mage::getStoreConfig('contacts/twilio/caller_id')
+            && Mage::getStoreConfig('contacts/twilio/phone_number')
+        ;
     }
 
     public function getCapability()
