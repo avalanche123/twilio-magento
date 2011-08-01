@@ -30,10 +30,10 @@ class Avalanche_Twilio_Block_Client extends Mage_Core_Block_Template
         return $capability->generateToken();
     }
 
-    public function render()
+    protected function _toHtml()
     {
         if (Avalanche_Twilio_Model_Twilio::isSetUp()) {
-            return $this->toHtml();
+            return $this->_toHtml();
         }
     }
 }
