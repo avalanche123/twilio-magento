@@ -17,6 +17,12 @@ class Avalanche_Twilio_Model_Twilio extends Services_Twilio
         parent::__construct($this->accountSid, $this->authToken);
     }
 
+    public static function isSetUp()
+    {
+        return Mage::getStoreConfig('twilio/config/account_sid')
+            && Mage::getStoreConfig('twilio/config/auth_token');
+    }
+
     public function getCapability()
     {
         return new Services_Twilio_Capability($this->accountSid, $this->authToken);

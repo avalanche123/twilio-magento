@@ -29,4 +29,11 @@ class Avalanche_Twilio_Block_Client extends Mage_Core_Block_Template
         $capability->allowClientIncoming($this->clientId);
         return $capability->generateToken();
     }
+
+    public function toHtml()
+    {
+        if (Avalanche_Twilio_Model_Twilio::isSetUp()) {
+            return parent::toHtml();
+        }
+    }
 }
