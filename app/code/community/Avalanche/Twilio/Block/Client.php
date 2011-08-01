@@ -33,7 +33,7 @@ class Avalanche_Twilio_Block_Client extends Mage_Core_Block_Template
     protected function _toHtml()
     {
         if (Avalanche_Twilio_Model_Twilio::isSetUp()) {
-            return $this->_toHtml();
+            return parent::_toHtml();
         }
     }
 }
