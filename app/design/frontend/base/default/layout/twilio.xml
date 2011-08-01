@@ -33,6 +33,6 @@
 
     <twilio_twilio_twiml>
         <remove name="root"/>
-        <block type="twilio/twiml" template="twilio/twiml.phtml" output="toHtml" name="twiml"></block>
+        <block type="twilio/twiml" template="twilio/twiml.phtml" output="render" name="twiml"></block>
     </twilio_twilio_twiml>
 </layout>
